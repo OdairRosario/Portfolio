@@ -2,10 +2,12 @@ import React from 'react';
 
 
 const UnderConstruction: React.FC = () => {
+ 
+
   return (
     <div className="select-none non-interactive pointer-events-none min-h-screen flex flex-col items-center justify-center bg-gray-900">
       <img
-        src="/under_construction.gif"
+        src={`${process.env.BASE_PATH}/under_construction.gif`}
         alt="Em Construção"
         className=" w-64 md:w-96 mix-blend-luminosity rounded-2xl"
       />

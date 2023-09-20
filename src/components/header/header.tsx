@@ -11,12 +11,11 @@ const Header = () => {
                     {/* logo */}
                     <Link href={'/'} className='select-none non-interactive pointer-events-none'>
                         <img
-                            src={'/logo.svg'}
+                            src={`${process.env.BASE_PATH}/logo.svg`}
                             width={210}
                             height={58}
                             alt=''                
-                        >
-                            
+                        >  
                         </img>
                     </Link>
                   

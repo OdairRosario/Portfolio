@@ -11,7 +11,7 @@ const ProjectableButton = () => {
             <Link href={'/projects'} className='relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group '>
                 
                 <img
-                    src={'/rounded-text.png'}
+                    src={`${process.env.BASE_PATH}/rounded-text.png`}
                     width={141}
                     height={148}
                     alt=''
