@@ -1,7 +1,6 @@
 'use client'
 
 import './global.css'
-import type { Metadata } from 'next'
 import { Sora } from 'next/font/google'
 
 const sora = Sora({
@@ -10,10 +9,7 @@ const sora = Sora({
     weight: ["100", "200", "300", "400", "500", "600", "700", "800"]
 })
 
-export const metadata: Metadata = {
-    title: 'Portfolio',
-    description: '',
-}
+
 
 import Nav from '@/components/nav/nav'
 import Header from '@/components/header/header'
