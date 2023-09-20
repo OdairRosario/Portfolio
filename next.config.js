@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   output: 'export',
-  assetPrefix:'/Portifolio/',
+  assetPrefix:process.env.NEXT_PUBLIC_BASE_PATH,
 }
 
 module.exports = nextConfig

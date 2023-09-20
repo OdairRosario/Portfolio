@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -25,10 +27,10 @@ const config: Config = {
         accent: '#F13024',
       },
       backgroundImage: {
-        explosion: 'url("Portifolio/bg-explosion.png")',
-        circles: 'url("Portifolio/bg-circles.png")',
-        circleStar: 'url("Portifolio/circle-star.svg")',
-        site: 'url("Portifolio/site-bg.svg")',
+        explosion: `url("${basePath}/bg-explosion.png")`,
+        circles: `url("${basePath}/bg-circles.png")`,
+        circleStar: `url("${basePath}/circle-star.svg")`,
+        site: `url("${basePath}/site-bg.svg")`,
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',

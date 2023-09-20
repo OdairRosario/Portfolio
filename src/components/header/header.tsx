@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { basePath } from "../../../public/utils/config"
 
 import Socials from "../socials/socials"
 
@@ -11,7 +12,7 @@ const Header = () => {
                     {/* logo */}
                     <Link href={'/'} className='select-none non-interactive pointer-events-none'>
                         <img
-                            src={`/Portifolio/logo.svg`}
+                            src={`${basePath}logo.svg`}
                             width={210}
                             height={58}
                             alt=''                
