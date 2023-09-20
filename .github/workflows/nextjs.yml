@@ -73,8 +73,10 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Set BASE_PATH
+        run: echo "BASE_PATH=/Portifolio" >> $GITHUB_ENV
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} BASE_PATH='/Portifolio' next build
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Upload artifact
