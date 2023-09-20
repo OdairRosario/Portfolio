@@ -1,5 +1,3 @@
-
-import Image from "next/image"
 import Link from "next/link"
 
 import Socials from "../socials/socials"
@@ -12,16 +10,14 @@ const Header = () => {
                 <div className="flex flex-col lg:flex-row justify-between items-center gap-y-2 py-6">
                     {/* logo */}
                     <Link href={'/'} className='select-none non-interactive pointer-events-none'>
-                        <Image
+                        <img
                             src={'/logo.svg'}
                             width={210}
                             height={58}
-                            alt=''
-                            priority={true}
-                            
+                            alt=''                
                         >
                             
-                        </Image>
+                        </img>
                     </Link>
                   
                     {/* socials */}
