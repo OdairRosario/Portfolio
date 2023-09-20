@@ -1,9 +1,10 @@
 import React from 'react';
+import Image from "next/image"
 
 const UnderConstruction: React.FC = () => {
   return (
     <div className="select-none non-interactive pointer-events-none min-h-screen flex flex-col items-center justify-center bg-gray-900">
-      <img
+      <Image
         src="/under_construction.gif"
         alt="Em Construção"
         className=" w-64 md:w-96 mix-blend-luminosity rounded-2xl"

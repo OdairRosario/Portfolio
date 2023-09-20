@@ -2,10 +2,7 @@
 
 // icons
 import {
-  FaJs,
   FaReact,
-  FaWordpress,
-  FaFigma,
 } from "react-icons/fa";
 
 import {
@@ -41,20 +38,20 @@ const aboutData: AboutInformation[] = [
       {
         title: 'Backend',
         icons: [
-          <SiTypescript />,
-          <SiNestjs />,
-          <SiExpress />,
-          <SiDotnet />,
-          <SiPython />
+          <SiTypescript key="typescript"/>,
+          <SiNestjs key="nestjs"/>,
+          <SiExpress key="express"/>,
+          <SiDotnet key="dotnet" />,
+          <SiPython key="python"/>
 
         ],
       },
       {
         title: 'Frontend',
         icons: [
-          <SiNextdotjs />,
-          <FaReact />,
-          <SiTailwindcss />
+          <SiNextdotjs key="nextjs" />,
+          <FaReact key="react"/>,
+          <SiTailwindcss key="tailwindcss"/>
         ],
       },
     ],
@@ -103,7 +100,7 @@ const About = () => {
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circle />
-      
+
       {/*avatar image */}
       <motion.div
         variants={fadeIn('right', 0.2)}
@@ -114,7 +111,7 @@ const About = () => {
         <Person />
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        
+
         {/*text*/}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
@@ -142,7 +139,7 @@ const About = () => {
             exit='hidden'>
 
             <div className="flex flex-1 xl:gap-x-6">
-              
+
               {/*experience*/}
               <div className="relative flex-1  after:h-full before:w-[1px] after:w-[1px] after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text4xl font-extrabold text-teal-400 mb-2">
@@ -187,16 +184,16 @@ const About = () => {
           <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-6 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
-                
+
                 {/*title*/}
                 <div className="font-light mb-2 md:mb-0">{item.title}</div>
                 <div className="hidden md:flex">-</div>
                 <div >{item.stage}</div>
-                
+
                 {/*icons*/}
                 <div className="flex gap-x-4">
                   {item.icons?.map((icon, itemIndex) => {
-                    return <div className="text-2xl text-white">
+                    return <div key={itemIndex} className="text-2xl text-white">
                       {icon}
                     </div>
                   })}
