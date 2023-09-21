@@ -1,18 +1,5 @@
-type Direction = 'up' | 'down' | 'left' | 'right';
-
-interface Transition {
-  type: 'tween';
-  duration: number;
-  delay: number;
-  ease: number[];
-}
-
-interface AnimationProps {
-  y: number;
-  x: number;
-  opacity: number;
-  transition: Transition;
-}
+import { AnimationProps } from "@/interfaces/animate-props.interface";
+import { Direction } from "@/types/direction.type";
 
 export const fadeIn = (direction: Direction | null, delay: number): { hidden: AnimationProps; show: AnimationProps } => {
   return {

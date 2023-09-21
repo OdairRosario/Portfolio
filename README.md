@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+```
+# Portfolio - Odair Rosario
 
-## Getting Started
+Welcome to my portfolio! This project is built using Next.js and some other incredible technologies listed below.
 
-First, run the development server:
+[**Live Demo**](https://odairrosario.github.io/Portifolio/)
+
+## 🚀 Technologies
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/api/motion/)
+- [react-countup](https://react-countup.now.sh/)
+- [react-tsparticles](https://particles.matteobruni.it/)
+- ... and many more!
+
+## 🚀 Installation and Running
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/OdairRosario/Portifolio.git
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd Portifolio
+```
+
+3. Install the dependencies:
+
+```bash
+npm install
+```
+
+4. Run the project in development mode:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` in your browser to view the project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📚 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The project follows a modular structure with reusable components, pages, and styles. All source code is located in the `src/` directory.
 
-## Learn More
+## 🙌 Contribution
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are always welcome! Feel free to open an issue or pull request for any problems or enhancements you wish to address.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📃 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is under the MIT license. Check the [LICENSE](https://github.com/OdairRosario/Portifolio/blob/main/LICENSE) file for more details.
+```

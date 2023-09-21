@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { RiLinkedinLine, RiWhatsappLine, RiTelegramLine, RiDiscordLine } from 'react-icons/ri';
 
-const Socials = () => {
+const Socials: React.FC = () => {
     const [showPopup, setShowPopup] = useState(false);
     const [isExiting, setIsExiting] = useState(false);
 

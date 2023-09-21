@@ -1,46 +1,12 @@
 'use client'
 
-import {
-  HiHome,
-  HiUser,
-  HiViewColumns,
-  HiRectangleGroup,
-  HiChatBubbleBottomCenterText,
-  HiEnvelope,
-} from 'react-icons/hi2';
-
-
-interface NavData {
-  path: string
-  name: string
-  icon: JSX.Element
-}
-
-export const navData: NavData[] = [
-  {
-    name: 'Início',
-    path: '/',
-    icon: <HiHome />
-  },
-  {
-    name: 'Sobre',
-    path: '/about',
-    icon: <HiUser />
-  },
-  {
-    name: 'Projetos',
-    path: '/projects',
-    icon: <HiRectangleGroup />
-  },
-];
-
+import { NavData } from '@/interfaces/nav-data.interface';
 import Link from 'next/link';
-
 import { usePathname } from 'next/navigation'
+import { navData } from './nav-data';
 
-const Nav = () => {
+const Nav: React.FC = () => {
   const pathname = usePathname()
-
 
   return (
     <nav className='flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-2-md xl:h-screen '>
@@ -58,11 +24,9 @@ const Nav = () => {
                     {data.name}
                   </div>
                   <div className='border-solid border-l-withe border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2'>
-
                   </div>
                 </div>
               </div>
-
               <div>{data.icon}</div>
             </Link>
           )

@@ -1,10 +1,10 @@
 'use client'
 
 import ParticlesBlock from "@/components/particles-block/particles-block"
-import ProjectableButton from "@/components/projectable-button/projectable-button"
+import ProjectableButton from "@/components/circle-button/circle-button"
 import Person from "@/components/person/person"
 
-import { fadeIn } from "../../public/utils/variant"
+import { fadeIn } from "../utils/variant"
 import { motion } from "framer-motion"
 
 export default function Page() {

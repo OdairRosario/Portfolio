@@ -1,97 +1,13 @@
 'use client'
 
-// icons
-import {
-  FaReact,
-} from "react-icons/fa";
-
-import {
-  SiNextdotjs,
-  SiExpress,
-  SiTailwindcss,
-  SiNestjs,
-  SiDotnet,
-  SiPython,
-  SiTypescript
-} from "react-icons/si";
-
-
-
-// interfaces
-interface AboutInformation {
-  title: string
-  info: Information[]
-}
-
-interface Information {
-  title: string
-  icons?: JSX.Element[]
-
-  stage?: string
-}
-
-//  data
-const aboutData: AboutInformation[] = [
-  {
-    title: 'Tecnolgias',
-    info: [
-      {
-        title: 'Backend',
-        icons: [
-          <SiTypescript key="typescript"/>,
-          <SiNestjs key="nestjs"/>,
-          <SiExpress key="express"/>,
-          <SiDotnet key="dotnet" />,
-          <SiPython key="python"/>
-
-        ],
-      },
-      {
-        title: 'Frontend',
-        icons: [
-          <SiNextdotjs key="nextjs" />,
-          <FaReact key="react"/>,
-          <SiTailwindcss key="tailwindcss"/>
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Experiência',
-    info: [
-      {
-        title: 'Desenvolvedor Fullstack - Vision System',
-        stage: '2021 - 2023',
-      },
-      {
-        title: 'Freelancer',
-        stage: '2020 - 2021',
-      },
-    ],
-  },
-  {
-    title: 'Especializações',
-    info: [
-      {
-        title: 'Bacharelado em Engenharia de Software - UNICID, SP',
-        stage: '2025',
-      },
-      {
-        title: 'Técnico Desenvolvimento Sistemas  - CEDUP, Chapecó, SC',
-        stage: '2020',
-      }
-    ],
-  },
-];
-
-
 import Person from "@/components/person/person";
-import Circle from "@/components/circle/circle";
+import Circle from "@/components/circle-image/circle-image";
 import { useState } from "react";
 import { motion } from "framer-motion";
-
-import { fadeIn } from "../../../public/utils/variant";
+import { fadeIn } from "../../utils/variant";
 import CountUp from "react-countup";
+import { aboutData } from "./about-data";
+
 
 const About = () => {
 
@@ -153,9 +69,7 @@ const About = () => {
                 <div className="text-2xl xl:text4xl font-semibold text-teal-400 mb-2">
                   <CountUp start={0} end={5} duration={4} /> +
                 </div>
-
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] xl:max-w-[100px]">  Projetos construidos.</div>
-
               </div>
             </div>
           </motion.div>
@@ -202,7 +116,6 @@ const About = () => {
             })}
           </div>
         </motion.div>
-
       </div>
     </div >
   )
