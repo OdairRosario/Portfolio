@@ -2,7 +2,7 @@
 
 Welcome to my portfolio! This project is built using Next.js and some other incredible technologies listed below.
 
-[**Live Demo**](https://odairrosario.github.io/Portifolio/)
+[**Live Demo**](https://odairrosario.github.io/Portfolio/)
 
 ## 🚀 Technologies
 
@@ -20,13 +20,13 @@ Welcome to my portfolio! This project is built using Next.js and some other incr
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/OdairRosario/Portifolio.git
+git clone https://github.com/OdairRosario/Portfolio.git
 ```
 
 2. Navigate to the project folder:
 
 ```bash
-cd Portifolio
+cd Portfolio
 ```
 
 3. Install the dependencies:
@@ -53,5 +53,5 @@ Contributions are always welcome! Feel free to open an issue or pull request for
 
 ## 📃 License
 
-This project is under the MIT license. Check the [LICENSE](https://github.com/OdairRosario/Portifolio/blob/main/LICENSE) file for more details.
+This project is under the MIT license. Check the [LICENSE](https://github.com/OdairRosario/Portfolio/blob/main/LICENSE) file for more details.
 

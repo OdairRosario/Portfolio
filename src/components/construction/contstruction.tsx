@@ -38,7 +38,7 @@ const UnderConstruction: React.FC = () => {
         initial='hidden'
         animate='show'
         exit='hidden'>
-        Desculpe o incômodo, volte em breve.
+       Estamos trabalhando nisso, volte mais tarde.
       </motion.p>
     </motion.div>
   );

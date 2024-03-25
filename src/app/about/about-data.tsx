@@ -11,7 +11,8 @@ import {
   SiNestjs,
   SiDotnet,
   SiPython,
-  SiTypescript
+  SiTypescript,
+  SiRedis
 } from "react-icons/si";
 
 export const aboutData: AboutInformation[] = [
@@ -23,10 +24,9 @@ export const aboutData: AboutInformation[] = [
         icons: [
           <SiTypescript key="typescript" />,
           <SiNestjs key="nestjs" />,
-          <SiExpress key="express" />,
           <SiDotnet key="dotnet" />,
-          <SiPython key="python" />
-
+          <SiPython key="python" />,
+          <SiRedis  key="redis"/>
         ],
       },
       {
@@ -43,12 +43,16 @@ export const aboutData: AboutInformation[] = [
     title: 'Experiência',
     info: [
       {
-        title: 'Desenvolvedor Fullstack - Vision System',
-        stage: '2021 - 2023',
+        title: 'Desenvolvedor Fullstack - Nexen Energia',
+        stage: '2023 - Atual',
       },
       {
-        title: 'Freelancer',
-        stage: '2020 - 2021',
+        title: 'Desenvolvedor Fullstack - Vision System',
+        stage: '2021-2023',
+      },
+      {
+        title: 'Desenvolvedor Fullstack - Freelancer',
+        stage: '2020-2021',
       },
     ],
   },
@@ -57,7 +61,7 @@ export const aboutData: AboutInformation[] = [
     info: [
       {
         title: 'Bacharelado em Engenharia de Software - UNICID, SP',
-        stage: '2025',
+        stage: '2026',
       },
       {
         title: 'Técnico Desenvolvimento Sistemas  - CEDUP, Chapecó, SC',
